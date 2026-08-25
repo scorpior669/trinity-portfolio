@@ -1,0 +1,47 @@
+# PDF DELIVERY SETUP - SEPARATE FROM GITHUB
+# How to sell 72-page Scorpion Doctrine PDF securely via Paystack (No PHP needed)
+
+## Step 1: Paystack Payment Page (Secure PDF Delivery)
+1. Login Paystack Dashboard -> https://dashboard.paystack.com
+2. Go to Payment Pages -> Create Payment Page
+3. Fill:
+   - Name: The Scorpion Doctrine - 72 Pages PDF
+   - Description: 72 Pages. The Doctrine. Not another ebook. The 3 Scorpion Filters: Industry, Friction, Dominance.
+   - Amount: 7500 NGN
+   - Check: "Send file after payment" or "Add downloadable file"
+   - Upload: Scorpion-Doctrine.pdf (your 72-page PDF)
+   - Check: "Collect customer email" (required for delivery)
+   - Success message: "Thank you! Your PDF has been sent to your email. Also check spam folder. WhatsApp 09039153915 for support."
+
+4. Create -> Copy link: https://paystack.com/pay/scorpion-doctrine-pdf (example)
+5. Share this link everywhere - WhatsApp Status, Instagram bio, etc.
+
+## How It Functions:
+- Customer clicks link -> Pays ₦7,500 via Transfer/Card/USSD
+- Paystack automatically emails PDF to customer (secure, cannot be stolen)
+- You get instant alert + money in Paystack balance -> Settled to bank next day
+- No need for verify.php, download.php, hosting - Paystack handles everything
+
+## Step 2: Update GitHub index.html Buttons
+- In your GitHub index.html, all "Buy PDF" buttons already point to Paystack Inline
+- For extra security, you can change button to direct Paystack Payment Page link:
+  <a href="https://paystack.com/pay/scorpion-doctrine-pdf">Buy PDF - ₦7,500</a>
+
+## Step 3: Keep HostAfrica Only For Domain
+- HostAfrica: Keep domain scorpionmall115.com.ng (yearly ~₦9k)
+- Delete hosting package after GitHub Pages is live - Save ₦3k-₦8k monthly
+- Point domain to GitHub via DNS A records (GitHub Pages settings shows IPs)
+
+## Your GitHub ZIP Contains:
+- index.html (Trinity House Mall - GitHub version, no PHP)
+- 01_Scorpio_Escrow/index.html
+- 02_FixNaija/index.html
+- 03_DrugCheck_NAFDAC/index.html
+- 04_DirectHarvest_FarmBridge/index.html
+- README.md
+
+## What NOT in ZIP (Intentionally):
+- Scorpion-Doctrine.pdf -> Upload to Paystack Payment Page (secure)
+- verify.php, download.php, webhook.php -> Not needed for GitHub, only needed if you stay on HostAfrica PHP hosting
+
+Questions? WhatsApp: 09039153915
